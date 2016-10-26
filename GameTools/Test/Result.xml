@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<TestRun>
+  <FailedTests></FailedTests>
+  <SuccessfulTests>
+    <Test id="1">
+      <Name>AssignmentTest::TestVector3Constructor</Name>
+    </Test>
+    <Test id="2">
+      <Name>AssignmentTest::TestDistance</Name>
+    </Test>
+    <Test id="3">
+      <Name>AssignmentTest::TestPointRemoval</Name>
+    </Test>
+    <Test id="4">
+      <Name>StudentTest::TestConstructor</Name>
+    </Test>
+    <Test id="5">
+      <Name>StudentTest::TestGrades</Name>
+    </Test>
+    <Test id="6">
+      <Name>StudentTest::TestAverageGrade</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>6</Tests>
+    <FailuresTotal>0</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>0</Failures>
+  </Statistics>
+</TestRun>

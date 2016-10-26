@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding='ISO-8859-1' standalone='yes' ?>
+<TestRun>
+  <FailedTests>
+    <FailedTest id="1">
+      <Name>AssignmentTest::TestVector3Constructor</Name>
+      <FailureType>Assertion</FailureType>
+      <Location>
+        <File>d:\gametools\assignment1\test\assignmenttest.cpp</File>
+        <Line>24</Line>
+      </Location>
+      <Message>equality assertion failed
+- Expected: 70
+- Actual  : 50
+</Message>
+    </FailedTest>
+    <FailedTest id="2">
+      <Name>AssignmentTest::TestDistance</Name>
+      <FailureType>Assertion</FailureType>
+      <Location>
+        <File>d:\gametools\assignment1\test\assignmenttest.cpp</File>
+        <Line>38</Line>
+      </Location>
+      <Message>equality assertion failed
+- Expected: 300
+- Actual  : 700
+</Message>
+    </FailedTest>
+    <FailedTest id="3">
+      <Name>AssignmentTest::TestPointRemoval</Name>
+      <FailureType>Assertion</FailureType>
+      <Location>
+        <File>d:\gametools\assignment1\test\assignmenttest.cpp</File>
+        <Line>57</Line>
+      </Location>
+      <Message>equality assertion failed
+- Expected: 4
+- Actual  : 5
+</Message>
+    </FailedTest>
+  </FailedTests>
+  <SuccessfulTests>
+    <Test id="4">
+      <Name>StudentTest::TestConstructor</Name>
+    </Test>
+    <Test id="5">
+      <Name>StudentTest::TestGrades</Name>
+    </Test>
+    <Test id="6">
+      <Name>StudentTest::TestAverageGrade</Name>
+    </Test>
+  </SuccessfulTests>
+  <Statistics>
+    <Tests>6</Tests>
+    <FailuresTotal>3</FailuresTotal>
+    <Errors>0</Errors>
+    <Failures>3</Failures>
+  </Statistics>
+</TestRun>
