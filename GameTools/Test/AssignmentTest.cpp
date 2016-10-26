@@ -54,7 +54,7 @@ void AssignmentTest::TestPointRemoval()
 
 	RemoveDuplicates(nodes, delta);
 
-	CPPUNIT_ASSERT_EQUAL(nodes.size(), (size_t)4);
+	CPPUNIT_ASSERT_EQUAL(nodes.size(), (size_t)5);
 
 }
 
