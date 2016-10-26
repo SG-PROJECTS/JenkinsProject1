@@ -168,6 +168,11 @@
     <Xml Include="FailedResult.xml" />
     <Xml Include="Result.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Assignment1\Assignment1.vcxproj">
+      <Project>{13146ba7-0567-491e-9fcb-bdaf314e84e1}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
