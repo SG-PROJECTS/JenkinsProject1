@@ -4,7 +4,7 @@
 #include "Vector3.h"
 
 
-
+#include "ZlibHelper.h"
 
 void main(int argc, char *argv[])
 {
@@ -41,12 +41,29 @@ void main(int argc, char *argv[])
 
 	RemoveDuplicates(nodes, delta);
 
+	std::string buffer = "size: ";
+	buffer.append(std::to_string(nodes.size()));
+	buffer.append(" ");
+	buffer.append("\n");
+
 	fprintf_s(outputFile, "size: %d\n", nodes.size());
 	for(auto& node : nodes)
 	{
 		fprintf_s(outputFile, "%f %f %f\n", node.x, node.y, node.z);
+		buffer.append(std::to_string(node.x));
+		buffer.append(" ");
+		buffer.append(std::to_string(node.y));
+		buffer.append(" ");
+		buffer.append(std::to_string(node.z));
+		buffer.append(" ");
+		buffer.append("\n");
 	}
 	
+	std::string data;
+	unsigned long sizeDataCompressed = 0;
+	ZLib::Compress(buffer, "savedData.dat", sizeDataCompressed);
+	ZLib::UnCompress(data, "savedData.dat", buffer.size(), sizeDataCompressed);
+
 	fclose(inputFile);
 	fclose(outputFile);
 }

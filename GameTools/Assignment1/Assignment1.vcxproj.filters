@@ -9,5 +9,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vector3.h" />
+    <ClInclude Include="ZlibHelper.h" />
   </ItemGroup>
 </Project>
